@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FRAME OF MIND — Stories don't end at the credits</title>
+  <meta name="description"
+    content="A cinematic personal archive of films, TV shows, and anime — and the characters, scenes, and ideas that shaped the way I see the world.">
+  <meta name="theme-color" content="#111318">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:title" content="FRAME OF MIND — Stories don't end at the credits">
+  <meta property="og:description"
+    content="A collection of stories, characters, and ideas that have shaped the way I see the world.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero-backdrop.svg">
+  <link rel="icon" href=" images/Frame-Of-Mind-Logo-2.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="images/hero-backdrop.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="shell nav-shell">
+      <a class="brand" href="#home" aria-label="Frame of Mind — back to top">
+        <img class="brand__mark" src="images/logo.svg" alt="" width="44" height="44">
+        <span class="brand__text">FRAME <em>OF</em> MIND</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a class="nav-link" href="#home" data-nav="home">Home</a>
+        <a class="nav-link" href="#collection" data-nav="collection">Collection</a>
+        <a class="nav-link" href="#about" data-nav="about">About</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Open menu</span>
+        <span class="nav-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true">
+        <img src="images/hero-backdrop.svg" alt="" width="1600" height="1000" fetchpriority="high">
+      </div>
+      <div class="hero__scrim" aria-hidden="true"></div>
+
+      <div class="shell hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow hero__eyebrow"><span class="eyebrow__rule" aria-hidden="true"></span>A personal archive —
+            Vol. 01</p>
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__line"><span>Stories don’t end</span></span>
+            <span class="hero__line hero__line--indent"><span>at the <em>credits.</em></span></span>
+          </h1>
+          <p class="hero__lede">A collection of stories, characters, and ideas that have shaped the way I see the world.
+          </p>
+          <p class="hero__sub">Not reviews. Just the lines, faces, and questions I keep carrying.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#collection">
+              Explore the collection
+              <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true">
+                <path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a class="btn btn--ghost" href="#about">Why I keep them</a>
+          </div>
+        </div>
+
+        <div class="hero__foot">
+          <dl class="hero__stats">
+            <div class="hero__stat">
+              <dt>Stories archived</dt>
+              <dd data-count="entries">—</dd>
+            </div>
+            <div class="hero__stat">
+              <dt>Formats</dt>
+              <dd class="hero__stat-small">Films · Series · Anime</dd>
+            </div>
+          </dl>
+          <a class="scroll-cue" href="#collection">
+            <span class="scroll-cue__line" aria-hidden="true"></span>
+            <span>Enter the archive</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="collection" id="collection" aria-labelledby="collection-title">
+      <div class="shell">
+        <header class="section-head">
+          <div class="section-head__title">
+            <p class="eyebrow">01 — The archive</p>
+            <h2 id="collection-title">Stories I keep<br>returning to.</h2>
+          </div>
+          <p class="section-head__note">An ongoing record of what I watched and what watched me back. New reflections
+            are added whenever a story refuses to leave.</p>
+        </header>
+
+        <div class="collection__toolbar">
+          <div class="filters" role="group" aria-label="Filter stories by category">
+            <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">
+              All <span class="filter__count" data-count-filter="all">—</span>
+            </button>
+            <button class="filter" type="button" data-filter="movie" aria-pressed="false">
+              Movies <span class="filter__count" data-count-filter="movie">—</span>
+            </button>
+            <button class="filter" type="button" data-filter="tv" aria-pressed="false">
+              TV Shows <span class="filter__count" data-count-filter="tv">—</span>
+            </button>
+            <button class="filter" type="button" data-filter="anime" aria-pressed="false">
+              Anime <span class="filter__count" data-count-filter="anime">—</span>
+            </button>
+          </div>
+
+          <div class="search">
+            <svg class="search__icon" viewBox="0 0 20 20" width="17" height="17" aria-hidden="true">
+              <circle cx="9" cy="9" r="5.5" fill="none" stroke="currentColor" stroke-width="1.4" />
+              <path d="M13.2 13.2 17 17" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+            </svg>
+            <label class="sr-only" for="story-search">Search stories by title</label>
+            <input class="search__input" id="story-search" type="search" placeholder="Search by title"
+              autocomplete="off" spellcheck="false">
+            <button class="search__clear" type="button" data-search-clear hidden aria-label="Clear search">
+              <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true">
+                <path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="collection__meta">
+          <p class="result-count" role="status" aria-live="polite" data-result-count>Loading stories…</p>
+          <p class="collection__hint">Select a poster to read the reflection</p>
+        </div>
+
+        <div class="collection__grid" data-collection-grid aria-busy="true"></div>
+
+        <div class="collection__state" data-collection-state hidden>
+          <p class="eyebrow" data-state-eyebrow>No results</p>
+          <h3 class="state__title" data-state-title>Nothing in this frame.</h3>
+          <p class="state__text" data-state-text>Try another title or clear the filters.</p>
+          <button class="btn btn--ghost" type="button" data-state-action hidden>Clear filters</button>
+        </div>
+
+        <noscript>
+          <p class="noscript-note">This archive loads its collection with JavaScript. Please enable JavaScript to browse
+            the stories.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="shell about__grid">
+        <figure class="about__figure">
+          <div class="about__image-frame">
+            <img src="images/about-still.svg"
+              alt="An abstract still life: a writing desk, books, a cup, and a plant in warm window light." width="1000"
+              height="1250" loading="lazy">
+          </div>
+          <figcaption>“A room for attention.” — personal archive, 2026</figcaption>
+        </figure>
+
+        <div class="about__copy">
+          <p class="eyebrow">02 — About the archive</p>
+          <h2 id="about-title">I collect the moments that rearranged me.</h2>
+          <p>I began keeping this archive because certain stories were doing more than entertaining me. They were
+            handing me language for things I could not yet explain: the shape of grief, the cost of ambition, the
+            strange courage required to stay soft in a hard world.</p>
+          <p>Some of these are masterpieces. Some are simply mine. What connects them is not a genre or a rating, but a
+            residue — a question that stayed after the credits, a character whose voice I still hear when I have to make
+            a decision.</p>
+          <p>I believe fiction is not an escape from real life. It is a rehearsal space for it. The stories we return to
+            quietly teach us what to notice, what to forgive, and who we might become.</p>
+
+          <blockquote class="about__quote">
+            <p>“A story is a machine for feeling another life from the inside.”</p>
+          </blockquote>
+
+          <ol class="principles">
+            <li class="principle">
+              <span class="principle__number">01</span>
+              <div>
+                <h3>Attention is a form of love.</h3>
+                <p>A story asks to be met slowly. The same is true of people.</p>
+              </div>
+            </li>
+            <li class="principle">
+              <span class="principle__number">02</span>
+              <div>
+                <h3>Ambiguity is not a failure.</h3>
+                <p>Not every ending owes us an explanation. Some truths only arrive as questions.</p>
+              </div>
+            </li>
+            <li class="principle">
+              <span class="principle__number">03</span>
+              <div>
+                <h3>We borrow courage from characters.</h3>
+                <p>Fiction lets us try on a life before we have the nerve to live it.</p>
+              </div>
+            </li>
+          </ol>
+
+          <p class="about__signature">— Curated in the dark, one story at a time.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="site-footer__top">
+        <a class="brand brand--footer" href="#home" aria-label="Frame of Mind — back to top">
+          <img class="brand__mark" src="images/logo.svg" alt="" width="38" height="38">
+          <span class="brand__text">FRAME <em>OF</em> MIND</span>
+        </a>
+        <p class="site-footer__tagline">Every story leaves<br>something behind.</p>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__copy">© <span data-year>2026</span> Frame of Mind. A personal archive. No tracking, no
+          noise.</p>
+        <nav class="site-footer__nav" aria-label="Footer">
+          <a href="#home">Home</a>
+          <a href="#collection">Collection</a>
+          <a href="#about">About</a>
+        </nav>
+        <a class="site-footer__top-link" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="story-dialog" data-story-dialog aria-label="Story reflection">
+    <div class="story-dialog__shell">
+      <button class="story-dialog__close" type="button" data-story-close aria-label="Close story">
+        <svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true">
+          <path d="M5 5l10 10M15 5 5 15" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+        </svg>
+      </button>
+      <div class="story-dialog__scroll" data-story-body></div>
+    </div>
+  </dialog>
+</body>
+
+</html>

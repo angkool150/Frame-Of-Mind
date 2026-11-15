@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" role="img" aria-label="A quiet writing desk in warm window light">
+  <title>A room for attention</title>
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#1B1C1D"/>
+      <stop offset="1" stop-color="#0D0E10"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#E4C99C" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#E4C99C" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#E0B77F" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#E0B77F" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#wall)"/>
+  <polygon points="640,120 940,180 900,760 700,700" fill="url(#light)"/>
+  <polygon points="660,130 930,185 900,420 680,360" fill="#0E1114" fill-opacity="0.55"/>
+  <line x1="785" y1="150" x2="785" y2="400" stroke="#0B0D10" stroke-opacity="0.6" stroke-width="5"/>
+  <line x1="680" y1="280" x2="910" y2="310" stroke="#0B0D10" stroke-opacity="0.6" stroke-width="4"/>
+  <rect x="105" y="210" width="300" height="400" fill="none" stroke="#E8E3DA" stroke-opacity="0.12"/>
+  <rect x="125" y="230" width="260" height="360" fill="#B68B5E" fill-opacity="0.08"/>
+  <circle cx="255" cy="390" r="84" fill="none" stroke="#E8E3DA" stroke-opacity="0.14"/>
+  <circle cx="255" cy="390" r="30" fill="#B68B5E" fill-opacity="0.2"/>
+  <line x1="60" y1="780" x2="940" y2="780" stroke="#E8E3DA" stroke-opacity="0.22" stroke-width="3"/>
+  <rect x="60" y="780" width="880" height="22" fill="#07090B"/>
+  <g>
+    <rect x="520" y="738" width="240" height="42" fill="#1D1A17" stroke="#E8E3DA" stroke-opacity="0.1"/>
+    <rect x="538" y="708" width="200" height="32" fill="#25211C" stroke="#E8E3DA" stroke-opacity="0.12"/>
+    <rect x="562" y="682" width="154" height="28" fill="#2B2620" stroke="#B68B5E" stroke-opacity="0.35"/>
+  </g>
+  <g>
+    <rect x="130" y="690" width="118" height="90" rx="4" fill="#0E1013" stroke="#E8E3DA" stroke-opacity="0.16"/>
+    <path d="M130 712 L188 690 L248 712" fill="none" stroke="#E8E3DA" stroke-opacity="0.16"/>
+    <rect x="160" y="620" width="58" height="70" fill="#14161A" stroke="#E8E3DA" stroke-opacity="0.1"/>
+    <path d="M174 620 L174 690 M204 620 L204 690" stroke="#E8E3DA" stroke-opacity="0.08"/>
+  </g>
+  <g>
+    <circle cx="380" cy="716" r="34" fill="none" stroke="#E8E3DA" stroke-opacity="0.3"/>
+    <path d="M354 700 Q380 730 406 700" fill="none" stroke="#E8E3DA" stroke-opacity="0.16"/>
+    <ellipse cx="380" cy="780" rx="52" ry="8" fill="#07090B" fill-opacity="0.6"/>
+  </g>
+  <g>
+    <path d="M760 780 L760 640" stroke="#B68B5E" stroke-opacity="0.35" stroke-width="2"/>
+    <path d="M760 660 Q724 620 704 600 M760 690 Q806 654 826 630 M760 720 Q720 692 694 680" fill="none" stroke="#B68B5E" stroke-opacity="0.25" stroke-width="2"/>
+    <circle cx="760" cy="620" r="90" fill="url(#lamp)" opacity="0.6"/>
+  </g>
+  <circle cx="785" cy="240" r="220" fill="url(#lamp)" opacity="0.25"/>
+  <rect width="1000" height="1250" filter="url(#grain)" opacity="0.06"/>
+  <rect x="30" y="30" width="940" height="1190" fill="none" stroke="#E8E3DA" stroke-opacity="0.07"/>
+</svg>

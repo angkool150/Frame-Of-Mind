@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200" role="img" aria-label="Frame of Mind poster placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1C2028"/>
+      <stop offset="1" stop-color="#0D0F13"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+  <rect width="800" height="1200" fill="url(#bg)"/>
+  <rect x="26" y="26" width="748" height="1148" fill="none" stroke="#E8E3DA" stroke-opacity="0.12"/>
+  <circle cx="400" cy="480" r="150" fill="none" stroke="#B68B5E" stroke-opacity="0.4"/>
+  <path d="M356 414 L356 546 M356 414 L448 414 M356 480 L426 480" fill="none" stroke="#E8E3DA" stroke-opacity="0.7" stroke-width="4" stroke-linecap="round"/>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#E8E3DA" text-anchor="middle">
+    <text x="400" y="760" font-size="34" letter-spacing="4">FRAME OF MIND</text>
+    <text x="400" y="808" font-size="16" font-style="italic" fill="#A5A5A5" letter-spacing="1">poster not available</text>
+  </g>
+  <rect width="800" height="1200" filter="url(#grain)" opacity="0.06"/>
+</svg>
