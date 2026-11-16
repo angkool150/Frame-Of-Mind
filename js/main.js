@@ -277,7 +277,7 @@ const sectionObserver = new IntersectionObserver(
   { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
 );
 
-['home', 'collection', 'about'].forEach((id) => {
+['home', 'collection', 'about', 'credits'].forEach((id) => {
   const section = document.getElementById(id);
   if (section) sectionObserver.observe(section);
 });
